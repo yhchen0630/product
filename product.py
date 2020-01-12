@@ -10,4 +10,8 @@ while True:
     products.append(p)#簡化(7-10行)版 products.append([name,price])
 print(products)
 
+for product in products:
+    #print(product)
+    print(product[0],'的價格為', product[1])
+
 
