@@ -4,13 +4,13 @@ if os.path.isfile('products.csv'):
     print('YES')
 #讀取資料
     with open('products.csv', 'r', encoding = 'utf-8') as f:
-    for line in f:
-        if '商品,價格' in line:
-            continue #跳過"繼續執行line"
-        name, price = line.strip().split(',')
-        products.append([name, price])
+        for line in f:
+            if '商品,價格' in line:
+                continue #跳過"繼續執行line"
+            name, price = line.strip().split(',')
+            products.append([name, price])
 
-print(products)
+    print(products)
 else:
     print('NO')
 
